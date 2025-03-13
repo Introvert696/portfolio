@@ -4,18 +4,14 @@
   <header>
    <div class="header-items">
      <div class="logo">
-      <b>FTv</b>
+       <img src="@/assets/logo.png" alt="">
      </div>
-     <div class="sandwich-btn" @mouseenter="addVisible" @touchstart="addVisible" >
-       Menu
-       <div :class="['sandwich-layout',{'visible': isHiglighted}]" @mouseleave="removeVisible" @touchend="removeVisible" >
-         <RouterLink to="/">Home</RouterLink>
-         <RouterLink to="/about">Blog</RouterLink>
-         <RouterLink to="/about">Projects</RouterLink>
-         <RouterLink to="/about">About</RouterLink>
+     <div class="router-links">
+         <RouterLink to="/">Главная</RouterLink>
+         <RouterLink to="/about">Проекты</RouterLink>
+         <RouterLink to="/about">Блог</RouterLink>
+         <RouterLink to="/about">О мне</RouterLink>
        </div>
-     </div>
-
    </div>
 
   </header>
@@ -28,24 +24,17 @@ import {ref} from "vue";
 
 const isHiglighted = ref(false);
 
-const addVisible= () => {
-  isHiglighted.value = true;
-};
-const removeVisible= () => {
-  isHiglighted.value = false;
-}
-
-
 </script>
 
 <style scoped>
 header {
   margin: auto;
   height: 50px;
-  background-color: #88afb1;
+  background-color: #252525;
   color: white;
 }
 .logo {
+  margin-top: 1%;
   font-size: 36px;
   text-transform: uppercase;
 }
@@ -55,36 +44,12 @@ header {
   height: inherit;
   justify-content: space-between;
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
-.sandwich-btn {
+.router-links {
+  font-size: 15px;
   display: flex;
-  position: relative;
-}
-.sandwich-layout {
-
-  position: absolute;
-  top: 2.2em;
-  right: 0;
-  display: none;
-  background-color: #9499ba;
-  width: 15em;
-  height: 15em;
-  grid-template-rows: repeat(4, 1fr);
-  a{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    box-sizing: border-box;
-    padding-left: 1em;
-
-  }
-  a:hover {
-    background-color: #707597;
-  }
-}
-
-.visible {
-  display: grid;
+  width: 20em;
+  justify-content: space-between;
 }
 </style>

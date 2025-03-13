@@ -10,12 +10,9 @@ import MainFooter from "@/components/MainFooter.vue";
   <div class="main-content">
     <RouterView />
   </div>
-  <MainFooter />
+<!--  <MainFooter />-->
 </template>
 
 <style scoped>
-  .main-content {
-    margin: auto;
-    width: 95%;
-  }
+
 </style>
