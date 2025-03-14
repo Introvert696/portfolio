@@ -38,5 +38,16 @@ section {
     font-size: 1.6em;
   }
 }
+@media (max-width: 768px) {
+  .text-first-section {
 
+    line-height: 60px;
+    p {
+      line-height: 40px;
+    }
+    h1 {
+      font-size: 5em;
+    }
+  }
+}
 </style>

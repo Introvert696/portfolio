@@ -52,4 +52,9 @@ header {
   width: 20em;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .router-links a{
+    display: none;
+  }
+}
 </style>

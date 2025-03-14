@@ -3,6 +3,7 @@
 </script>
 
 <template>
+
   <div class="exp-container">
     <div class="right-exp-container">
       <p>PHP</p>
@@ -45,13 +46,64 @@
 }
 .right-exp-container {
   display: flex;
-  width: auto;
+
   p {
-    rotate: -90deg;
+    display: flex;
+    align-items: center;
+    rotate: 90deg;
     margin: 0;
-    width: inherit;
     font-weight: 700;
-    font-size: 128px;
+    font-size: 7vw;
   }
 }
+@media (max-width: 768px) {
+  .right-exp-container {
+    display: flex;
+
+    p {
+      display: flex;
+      align-items: center;
+      rotate: 90deg;
+      margin: 0;
+      font-weight: 700;
+      font-size: 7vw;
+    }
+  }
+  .right-exp-container {
+    display: flex;
+    align-items: center;
+    p {
+      font-weight: 800;
+      rotate: none;
+
+      margin: auto;
+    }
+  }
+
+
+  .exp-container {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding:5%;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .left-exp-container {
+
+    width: 100%;
+
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+}
+.right-exp-container {
+  p {
+    --font-size: 800;
+  }
+}
+
 </style>

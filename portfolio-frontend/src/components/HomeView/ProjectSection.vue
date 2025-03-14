@@ -44,7 +44,7 @@ section {
   background-size: cover;
   color: white;
   width: 100%;
-
+  padding-bottom: 5%;
 
 }
 .title-project-section {
@@ -67,15 +67,15 @@ section {
   }
 }
 .projects-cards {
-  width: 80vw;
+  width: 81vw;
   margin: auto;
   margin-top: 5%;
   min-height: 60vh;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  gap: 1em;
 }
 .card {
   align-items: center;
@@ -83,16 +83,36 @@ section {
   box-sizing: border-box;
   padding: 1% 2%;
   background-color: #262626;
-  width: 32%;
-  min-height: 100%;
+  width: 26vw;
   h1 {
-    font-size: 48px;
+    font-size: 3vw;
     text-transform: uppercase;
   }
   p {
     margin-top: 5%;
     text-align: justify;
+    font-size: 1.3vw;
   }
+}
+@media (max-width: 768px) {
+  section {
+    padding-bottom: 5%;
+  }
+.projects-cards {
+  width: 95vw;
+}
+  .card {
+    flex-direction: column;
+    width: 100%;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      margin-top: 1%;
+      font-size: 14px;
+    }
+  }
+
 }
 </style>
 

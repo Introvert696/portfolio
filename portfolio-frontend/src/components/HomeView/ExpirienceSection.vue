@@ -42,7 +42,7 @@ section {
     display: flex;
     width: inherit;
     margin: auto;
-    font-size: 8em;
+    font-size: 5vw;
     font-weight: bold;
   }
 }
@@ -70,5 +70,16 @@ section {
   flex-direction: column;
   justify-content: space-between;
 
+}
+@media (max-width: 768px) {
+
+  .side-section {
+    display: none;
+  }
+  .main-content-section {
+    width: 98%;
+    margin: auto;
+    align-items: center;
+  }
 }
 </style>

@@ -42,12 +42,34 @@
 }
 .right-exp-container {
   display: flex;
+  height: inherit;
   p {
+    display: flex;
+    align-items: center;
     rotate: 90deg;
     margin: 0;
-    width: inherit;
     font-weight: 700;
-    font-size: 128px;
+    font-size: 7vw;
+  }
+}
+@media (max-width: 768px) {
+  .right-exp-container {
+    display: flex;
+    p {
+      rotate: none;
+      align-items: center;
+      margin: auto;
+    }
+  }
+  .left-exp-container {
+    width: 100%;
+  }
+  .exp-container {
+    width: 80%;
+    display: block;
+  }
+  h1 {
+    text-transform: uppercase;
   }
 }
 </style>
