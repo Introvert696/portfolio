@@ -1,12 +1,15 @@
 <script setup lang="ts">
-
+defineProps({
+  title: String,
+  description: String,
+})
 </script>
 
 <template>
   <div class="article-card">
     <div class="left-article-card">
-      <h1>ARTICLE TITLE</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu fermentum mauris. Sed cursus ut magna eu sagittis. Etiam fringilla cursus urna, quis luctus elit congue id. Curabitur est libero, elementum at sem non, ultricies tristique sem. Quisque molestie, lacus ac feugiat viverra, quam velit laoreet ante, iaculis euismod nulla libero ut metus. Praesent accumsan, quam et aliquam ultricies, ex augue tristique nibh, a finibus arcu orci consectetur elit. Proin condimentum suscipit ex, id efficitur nisi auctor eu. Phasellus scelerisque dolor elit, eu ultricies eros gravida sit amet. Fusce ante tortor, dapibus quis rutrum eu, suscipit sit amet sem. Curabitur volutpat ligula libero, maximus rhoncus enim gravida id. Nunc fermentum sagittis tortor non fringilla.</p>
+      <h1>{{title}}</h1>
+      <p>{{description}}</p>
     </div>
 
   </div>

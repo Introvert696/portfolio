@@ -8,7 +8,6 @@ const isSafari = ()=> {
   const userAgent = navigator.appVersion;
   return userAgent.includes('iPhone');
 }
-const browserName = ref(window.innerWidth);
 
 onMounted(()=>{
   console.log(isSafari());
@@ -22,10 +21,7 @@ onMounted(()=>{
   <div v-if="isSafari()" class='view'>
     <h1>ВНИМАНИЕ</h1>
     <br>
-    <p>Выбросьте ваш iphone я не понимаю просто почему ничего нормально не работает на iphone,
-    почему я как разработчик должен на карачках что то допиливать на айфоне, в то время как на андроид
-    все нормально отображаеться, прост почему
-    Тим кук лох поганный.</p>
+    <p>Iphone не поддерживается.</p>
 
   </div>
   <MainHeader></MainHeader>
