@@ -3,16 +3,32 @@
     <h1>Contacts</h1>
     <div class="contacts-items">
       <div class="contact-btn">
-        <a href="http://t.me/introvert696" target="_blank"  class="contact-btn-title">Telegram</a>
+        <a
+          href="http://t.me/introvert696"
+          target="_blank"
+          class="contact-btn-title"
+        >Telegram</a>
       </div>
       <div class="contact-btn">
-        <a href="mailto:introvert696@yandex.ru" target="_blank" class="contact-btn-title">Email</a>
+        <a
+          href="mailto:introvert696@yandex.ru"
+          target="_blank"
+          class="contact-btn-title"
+        >Email</a>
       </div>
       <div class="contact-btn">
-        <a href="https://github.com/Introvert696" target="_blank" class="contact-btn-title">Github</a>
+        <a
+          href="https://github.com/Introvert696"
+          target="_blank"
+          class="contact-btn-title"
+        >Github</a>
       </div>
       <div class="contact-btn">
-        <a href="https://gitlab.com/introvert696" target="_blank" class="contact-btn-title">Gitlab</a>
+        <a
+          href="https://gitlab.com/introvert696"
+          target="_blank"
+          class="contact-btn-title"
+        >Gitlab</a>
       </div>
     </div>
   </section>
